@@ -13,13 +13,13 @@ var animatePoints = function() {
 
 $(window).load(function() {    
     // Automatically animate the points on a tall screen where scrolling can't trigger the animation
-    if ($(window.)height() > 950) {
+    if ($(window).height() > 950) {
         animatePoints();
     }
   
     var scrollDistance = $('.selling-points').offset().top - $(window).height() + 200;
     
-    $(window.scroll(function(event) {
+    $(window).scroll(function(event) {
         if ($(window).scrollTop() >= scrollDistance) {
             animatePoints();
         }                      
